@@ -482,6 +482,7 @@
             this.ProductInfoFormCancelLabel.TabIndex = 13;
             this.ProductInfoFormCancelLabel.Text = "Cancel";
             this.ProductInfoFormCancelLabel.UseVisualStyleBackColor = true;
+            this.ProductInfoFormCancelLabel.Click += new System.EventHandler(this.ProductInfoFormCancelLabel_Click);
             // 
             // ProductInfoFormNextLabel
             // 
@@ -491,12 +492,14 @@
             this.ProductInfoFormNextLabel.TabIndex = 14;
             this.ProductInfoFormNextLabel.Text = "Next";
             this.ProductInfoFormNextLabel.UseVisualStyleBackColor = true;
+            this.ProductInfoFormNextLabel.Click += new System.EventHandler(this.ProductInfoFormNextLabel_Click);
             // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 551);
+            this.ControlBox = false;
             this.Controls.Add(this.ProductInfoFormNextLabel);
             this.Controls.Add(this.ProductInfoFormCancelLabel);
             this.Controls.Add(this.AnotherProductLabel);
@@ -511,8 +514,10 @@
             this.Controls.Add(this.ProductIDLabel);
             this.Controls.Add(this.ProductInfoMenuStrip);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ProductInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();

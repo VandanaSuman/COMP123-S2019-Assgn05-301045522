@@ -16,5 +16,16 @@ namespace COMP123_S2019_Assgn05_301045522
         {
             InitializeComponent();
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void NewOrderButton_Click(object sender, EventArgs e)
+        {
+            Program.Forms[FormNames.SELECT_FORM].Show();
+            this.Hide();
+        }
     }
 }

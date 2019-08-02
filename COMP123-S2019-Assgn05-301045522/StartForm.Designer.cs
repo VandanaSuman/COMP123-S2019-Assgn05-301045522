@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.StartFormLabel = new System.Windows.Forms.Label();
-            this.NewOrderLabel = new System.Windows.Forms.Button();
-            this.OpenOrderLabel = new System.Windows.Forms.Button();
-            this.ExitLabel = new System.Windows.Forms.Button();
+            this.NewOrderButton = new System.Windows.Forms.Button();
+            this.OpenOrderButton = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StartFormLabel
@@ -43,41 +43,44 @@
             this.StartFormLabel.TabIndex = 1;
             this.StartFormLabel.Text = "Order Your Computer Today!";
             // 
-            // NewOrderLabel
+            // NewOrderButton
             // 
-            this.NewOrderLabel.Location = new System.Drawing.Point(168, 243);
-            this.NewOrderLabel.Name = "NewOrderLabel";
-            this.NewOrderLabel.Size = new System.Drawing.Size(288, 39);
-            this.NewOrderLabel.TabIndex = 2;
-            this.NewOrderLabel.Text = "Start a New Order";
-            this.NewOrderLabel.UseVisualStyleBackColor = true;
+            this.NewOrderButton.Location = new System.Drawing.Point(168, 243);
+            this.NewOrderButton.Name = "NewOrderButton";
+            this.NewOrderButton.Size = new System.Drawing.Size(288, 39);
+            this.NewOrderButton.TabIndex = 2;
+            this.NewOrderButton.Text = "Start a New Order";
+            this.NewOrderButton.UseVisualStyleBackColor = true;
+            this.NewOrderButton.Click += new System.EventHandler(this.NewOrderButton_Click);
             // 
-            // OpenOrderLabel
+            // OpenOrderButton
             // 
-            this.OpenOrderLabel.Location = new System.Drawing.Point(168, 303);
-            this.OpenOrderLabel.Name = "OpenOrderLabel";
-            this.OpenOrderLabel.Size = new System.Drawing.Size(288, 39);
-            this.OpenOrderLabel.TabIndex = 3;
-            this.OpenOrderLabel.Text = "Open a Saved Order";
-            this.OpenOrderLabel.UseVisualStyleBackColor = true;
+            this.OpenOrderButton.Location = new System.Drawing.Point(168, 303);
+            this.OpenOrderButton.Name = "OpenOrderButton";
+            this.OpenOrderButton.Size = new System.Drawing.Size(288, 39);
+            this.OpenOrderButton.TabIndex = 3;
+            this.OpenOrderButton.Text = "Open a Saved Order";
+            this.OpenOrderButton.UseVisualStyleBackColor = true;
             // 
-            // ExitLabel
+            // ExitButton
             // 
-            this.ExitLabel.Location = new System.Drawing.Point(168, 364);
-            this.ExitLabel.Name = "ExitLabel";
-            this.ExitLabel.Size = new System.Drawing.Size(288, 39);
-            this.ExitLabel.TabIndex = 4;
-            this.ExitLabel.Text = "Exit";
-            this.ExitLabel.UseVisualStyleBackColor = true;
+            this.ExitButton.Location = new System.Drawing.Point(168, 364);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(288, 39);
+            this.ExitButton.TabIndex = 4;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
-            this.Controls.Add(this.ExitLabel);
-            this.Controls.Add(this.OpenOrderLabel);
-            this.Controls.Add(this.NewOrderLabel);
+            this.ControlBox = false;
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.OpenOrderButton);
+            this.Controls.Add(this.NewOrderButton);
             this.Controls.Add(this.StartFormLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -93,8 +96,8 @@
         #endregion
 
         private System.Windows.Forms.Label StartFormLabel;
-        private System.Windows.Forms.Button NewOrderLabel;
-        private System.Windows.Forms.Button OpenOrderLabel;
-        private System.Windows.Forms.Button ExitLabel;
+        private System.Windows.Forms.Button NewOrderButton;
+        private System.Windows.Forms.Button OpenOrderButton;
+        private System.Windows.Forms.Button ExitButton;
     }
 }

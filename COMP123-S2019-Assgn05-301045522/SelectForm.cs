@@ -16,5 +16,16 @@ namespace COMP123_S2019_Assgn05_301045522
         {
             InitializeComponent();
         }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            Program.Forms[FormNames.PRODUCT_INFO_FORM].Show();
+            this.Hide();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
