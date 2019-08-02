@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Assgn05_301045522
 {
-    public partial class Form1 : Form
+    public partial class OrderForm : Form
     {
-        public Form1()
+        public OrderForm()
         {
             InitializeComponent();
         }
