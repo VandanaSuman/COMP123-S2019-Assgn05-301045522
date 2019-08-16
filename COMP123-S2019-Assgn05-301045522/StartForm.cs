@@ -27,5 +27,12 @@ namespace COMP123_S2019_Assgn05_301045522
             Program.Forms[FormNames.SELECT_FORM].Show();
             this.Hide();
         }
+
+        private void OpenOrderButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.Forms[FormNames.PRODUCT_INFO_FORM].Show();
+            ProductInfoForm.OpenFileDialog1();
+        }
     }
 }

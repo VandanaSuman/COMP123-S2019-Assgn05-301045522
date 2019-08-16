@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.SplashLabel = new System.Windows.Forms.Label();
             this.SplashTimer = new System.Windows.Forms.Timer(this.components);
+            this.dollarPictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dollarPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // WelcomeLabel
@@ -58,12 +61,22 @@
             this.SplashTimer.Interval = 3000;
             this.SplashTimer.Tick += new System.EventHandler(this.SplashTimer_Tick);
             // 
+            // dollarPictureBox
+            // 
+            this.dollarPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("dollarPictureBox.Image")));
+            this.dollarPictureBox.Location = new System.Drawing.Point(137, 186);
+            this.dollarPictureBox.Name = "dollarPictureBox";
+            this.dollarPictureBox.Size = new System.Drawing.Size(368, 205);
+            this.dollarPictureBox.TabIndex = 3;
+            this.dollarPictureBox.TabStop = false;
+            // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
             this.ControlBox = false;
+            this.Controls.Add(this.dollarPictureBox);
             this.Controls.Add(this.SplashLabel);
             this.Controls.Add(this.WelcomeLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
@@ -74,6 +87,7 @@
             this.Text = "Splash Form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SplashForm_FormClosing);
             this.Load += new System.EventHandler(this.SplashForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dollarPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,6 +98,7 @@
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Label SplashLabel;
         private System.Windows.Forms.Timer SplashTimer;
+        private System.Windows.Forms.PictureBox dollarPictureBox;
     }
 }
 

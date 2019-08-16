@@ -33,5 +33,15 @@ namespace COMP123_S2019_Assgn05_301045522
             Program.Forms[FormNames.ABOUT_FORM].Show();
             this.Hide();
         }
+        //Resource: https://www.youtube.com/watch?v=FJ5rNOMTZ9w
+        public static void OpenFileDialog1()
+        {
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            if(openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                string file = openFileDialog1.FileName;
+                MessageBox.Show(file);
+            }
+        }
     }
 }
