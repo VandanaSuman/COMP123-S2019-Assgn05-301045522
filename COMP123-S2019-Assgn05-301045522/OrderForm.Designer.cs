@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.OrderFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,9 +66,12 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.NewCancelButton = new System.Windows.Forms.Button();
             this.FinishButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OrderFormMenuStrip.SuspendLayout();
             this.SystemComponentsGroupBox.SuspendLayout();
             this.YourPriceTextBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // OrderFormMenuStrip
@@ -93,20 +95,12 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -121,6 +115,7 @@
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
             this.exitToolStripMenuItem1.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -170,6 +165,7 @@
             this.ComponentsTextBox.Location = new System.Drawing.Point(115, 133);
             this.ComponentsTextBox.Multiline = true;
             this.ComponentsTextBox.Name = "ComponentsTextBox";
+            this.ComponentsTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.ComponentsTextBox.Size = new System.Drawing.Size(297, 328);
             this.ComponentsTextBox.TabIndex = 2;
             // 
@@ -335,7 +331,7 @@
             this.YourPriceTextBox.Controls.Add(this.TotalLabel);
             this.YourPriceTextBox.Controls.Add(this.SalesTaxLabel);
             this.YourPriceTextBox.Controls.Add(this.PriceLabel);
-            this.YourPriceTextBox.Location = new System.Drawing.Point(490, 190);
+            this.YourPriceTextBox.Location = new System.Drawing.Point(490, 220);
             this.YourPriceTextBox.Name = "YourPriceTextBox";
             this.YourPriceTextBox.Size = new System.Drawing.Size(302, 177);
             this.YourPriceTextBox.TabIndex = 3;
@@ -420,12 +416,32 @@
             this.FinishButton.UseVisualStyleBackColor = true;
             this.FinishButton.Click += new System.EventHandler(this.FinishButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::COMP123_S2019_Assgn05_301045522.Properties.Resources.computer;
+            this.pictureBox1.Location = new System.Drawing.Point(504, 48);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(288, 136);
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 551);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.FinishButton);
             this.Controls.Add(this.NewCancelButton);
             this.Controls.Add(this.BackButton);
@@ -444,6 +460,7 @@
             this.SystemComponentsGroupBox.PerformLayout();
             this.YourPriceTextBox.ResumeLayout(false);
             this.YourPriceTextBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -489,5 +506,6 @@
         public System.Windows.Forms.TextBox TotalTextBox;
         public System.Windows.Forms.TextBox SalesTaxTextBox;
         public System.Windows.Forms.TextBox PriceTextBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

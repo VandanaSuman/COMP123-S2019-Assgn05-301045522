@@ -10,7 +10,13 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * App Name: Dollar Computers
+ * Author Name: Vandana
+ * Student ID : 301045522
+ * App Creation Date: 08/16/2019
+ * App Description: This app allows users to select a computer, display information about it and calculate the total price of the selection.
+ * */
 namespace COMP123_S2019_Assgn05_301045522
 {
 
@@ -21,7 +27,11 @@ namespace COMP123_S2019_Assgn05_301045522
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Next Label click event transfers data to OrderForm and calculate total price
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoFormNextLabel_Click(object sender, EventArgs e)
         {
             OrderForm orderForm = new OrderForm();
@@ -40,13 +50,21 @@ namespace COMP123_S2019_Assgn05_301045522
             orderForm.Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// Cancel button click event exist the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         private void ProductInfoFormCancelLabel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// Click event of aboutToolStripMenuItem that displays AboutForm
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
@@ -55,14 +73,17 @@ namespace COMP123_S2019_Assgn05_301045522
             this.Hide();
         }
         //Resource: https://www.youtube.com/watch?v=FJ5rNOMTZ9w
+
+            /// <summary>
+            /// OpenFileDialog1 method that displays a file dialog
+            /// </summary>
         public static void OpenFileDialog1()
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Text Files|*.txt";
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                //string file = openFileDialog1.FileName;
-                //MessageBox.Show(file);
+                
                 try
                 {
                     var filePath = openFileDialog1.FileName;
@@ -78,30 +99,42 @@ namespace COMP123_S2019_Assgn05_301045522
                 }
             }
         }
-
-        private void ProductInfoForm_Load(object sender, EventArgs e)
-        {
-           
-        }
-
+        /// <summary>
+        /// Click event of backToolStripMenuItem that displays SelectForm and Hides current Form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.Forms[FormNames.SELECT_FORM].Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// exitToolStripMenuItem exits the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// Click event of openToolStripMenuItem that calls OpenFileDialogMethod
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ProductInfoForm.OpenFileDialog1();
         }
-
+        /// <summary>
+        /// Click event of saveToolStripMenuItem that saves the user's selection with Product.txt Default name
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //creating a new instance of SaveFileDialog
             SaveFileDialog save = new SaveFileDialog();
 
             save.FileName = "Product.txt";
@@ -121,7 +154,11 @@ namespace COMP123_S2019_Assgn05_301045522
 
             }
         }
-
+        /// <summary>
+        /// Click event of AnotherProductLabel that again displays SelectForm to let the user choose another item
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AnotherProductLabel_Click(object sender, EventArgs e)
         {
             this.Hide();

@@ -6,7 +6,13 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * App Name: Dollar Computers
+ * Author Name: Vandana
+ * Student ID : 301045522
+ * App Creation Date: 08/16/2019
+ * App Description: This app allows users to select a computer, display information about it and calculate the total price of the selection.
+ * */
 namespace COMP123_S2019_Assgn05_301045522
 {
     partial class AboutForm : Form
@@ -101,5 +107,10 @@ namespace COMP123_S2019_Assgn05_301045522
             }
         }
         #endregion
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

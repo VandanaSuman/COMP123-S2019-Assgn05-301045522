@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.StartFormLabel = new System.Windows.Forms.Label();
             this.NewOrderButton = new System.Windows.Forms.Button();
             this.OpenOrderButton = new System.Windows.Forms.Button();
@@ -78,7 +77,7 @@
             // 
             // StartFormpictureBox
             // 
-            this.StartFormpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("StartFormpictureBox.Image")));
+            this.StartFormpictureBox.Image = global::COMP123_S2019_Assgn05_301045522.Properties.Resources.computer;
             this.StartFormpictureBox.Location = new System.Drawing.Point(168, 101);
             this.StartFormpictureBox.Name = "StartFormpictureBox";
             this.StartFormpictureBox.Size = new System.Drawing.Size(288, 136);

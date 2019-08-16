@@ -118,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SelectForm.resx">
       <DependentUpon>SelectForm.cs</DependentUpon>
@@ -152,6 +153,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\computer.jpg" />
+    <Content Include="images\dollar.jpg" />
+    <None Include="Resources\computer.jpg" />
+    <None Include="Resources\dollar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

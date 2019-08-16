@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.SplashLabel = new System.Windows.Forms.Label();
             this.SplashTimer = new System.Windows.Forms.Timer(this.components);
@@ -63,7 +62,7 @@
             // 
             // dollarPictureBox
             // 
-            this.dollarPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("dollarPictureBox.Image")));
+            this.dollarPictureBox.Image = global::COMP123_S2019_Assgn05_301045522.Properties.Resources.dollar;
             this.dollarPictureBox.Location = new System.Drawing.Point(137, 186);
             this.dollarPictureBox.Name = "dollarPictureBox";
             this.dollarPictureBox.Size = new System.Drawing.Size(368, 205);

@@ -133,7 +133,6 @@
             this.ProductDataGridView.Size = new System.Drawing.Size(844, 304);
             this.ProductDataGridView.TabIndex = 3;
             this.ProductDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductDataGridView_CellClick);
-            this.ProductDataGridView.Click += new System.EventHandler(this.ProductDataGridView_Click);
             // 
             // SelectionLabel
             // 
