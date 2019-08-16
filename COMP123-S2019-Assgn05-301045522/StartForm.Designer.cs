@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.StartFormLabel = new System.Windows.Forms.Label();
             this.NewOrderButton = new System.Windows.Forms.Button();
             this.OpenOrderButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.StartFormpictureBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.StartFormpictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // StartFormLabel
@@ -45,7 +48,7 @@
             // 
             // NewOrderButton
             // 
-            this.NewOrderButton.Location = new System.Drawing.Point(168, 243);
+            this.NewOrderButton.Location = new System.Drawing.Point(168, 274);
             this.NewOrderButton.Name = "NewOrderButton";
             this.NewOrderButton.Size = new System.Drawing.Size(288, 39);
             this.NewOrderButton.TabIndex = 2;
@@ -55,7 +58,7 @@
             // 
             // OpenOrderButton
             // 
-            this.OpenOrderButton.Location = new System.Drawing.Point(168, 303);
+            this.OpenOrderButton.Location = new System.Drawing.Point(168, 319);
             this.OpenOrderButton.Name = "OpenOrderButton";
             this.OpenOrderButton.Size = new System.Drawing.Size(288, 39);
             this.OpenOrderButton.TabIndex = 3;
@@ -72,12 +75,22 @@
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // StartFormpictureBox
+            // 
+            this.StartFormpictureBox.Image = ((System.Drawing.Image)(resources.GetObject("StartFormpictureBox.Image")));
+            this.StartFormpictureBox.Location = new System.Drawing.Point(168, 101);
+            this.StartFormpictureBox.Name = "StartFormpictureBox";
+            this.StartFormpictureBox.Size = new System.Drawing.Size(288, 136);
+            this.StartFormpictureBox.TabIndex = 5;
+            this.StartFormpictureBox.TabStop = false;
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
             this.ControlBox = false;
+            this.Controls.Add(this.StartFormpictureBox);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.OpenOrderButton);
             this.Controls.Add(this.NewOrderButton);
@@ -88,6 +101,7 @@
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StartForm";
+            ((System.ComponentModel.ISupportInitialize)(this.StartFormpictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,5 +113,6 @@
         private System.Windows.Forms.Button NewOrderButton;
         private System.Windows.Forms.Button OpenOrderButton;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.PictureBox StartFormpictureBox;
     }
 }

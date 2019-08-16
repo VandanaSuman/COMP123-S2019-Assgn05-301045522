@@ -27,5 +27,11 @@ namespace COMP123_S2019_Assgn05_301045522
         {
             Application.Exit();
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.Forms[FormNames.ABOUT_FORM].Show();
+            this.Hide();
+        }
     }
 }
