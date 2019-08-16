@@ -9,6 +9,7 @@ namespace COMP123_S2019_Assgn05_301045522
     static class Program
     {
         public static Dictionary<FormNames, Form> Forms;
+        //public static ProductInfoForm productInfoForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

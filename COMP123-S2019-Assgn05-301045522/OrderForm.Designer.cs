@@ -39,11 +39,11 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SystemComponentsGroupBox = new System.Windows.Forms.GroupBox();
             this.ComponentsTextBox = new System.Windows.Forms.TextBox();
-            this.PlatformTextBox = new System.Windows.Forms.TextBox();
+            this.NewPlatformTextBox = new System.Windows.Forms.TextBox();
             this.PlatformLabel = new System.Windows.Forms.Label();
-            this.ModelTextBox = new System.Windows.Forms.TextBox();
+            this.NewModelTextBox = new System.Windows.Forms.TextBox();
             this.ModelLabel = new System.Windows.Forms.Label();
-            this.ManufacturerTextBox = new System.Windows.Forms.TextBox();
+            this.NewManufacturerTextBox = new System.Windows.Forms.TextBox();
             this.OSLabel = new System.Windows.Forms.Label();
             this.WebCamLabel = new System.Windows.Forms.Label();
             this.GPUTypeLabel = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.MemoryLabel = new System.Windows.Forms.Label();
             this.LCDSizeLabel = new System.Windows.Forms.Label();
             this.ManufacturerLabel = new System.Windows.Forms.Label();
-            this.ConditionTextBox = new System.Windows.Forms.TextBox();
+            this.NewConditionTextBox = new System.Windows.Forms.TextBox();
             this.ConditionLabel = new System.Windows.Forms.Label();
             this.YourPriceTextBox = new System.Windows.Forms.GroupBox();
             this.TotalTextBox = new System.Windows.Forms.TextBox();
@@ -133,18 +133,18 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem.Text = "&About...";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // SystemComponentsGroupBox
             // 
             this.SystemComponentsGroupBox.Controls.Add(this.ComponentsTextBox);
-            this.SystemComponentsGroupBox.Controls.Add(this.PlatformTextBox);
+            this.SystemComponentsGroupBox.Controls.Add(this.NewPlatformTextBox);
             this.SystemComponentsGroupBox.Controls.Add(this.PlatformLabel);
-            this.SystemComponentsGroupBox.Controls.Add(this.ModelTextBox);
+            this.SystemComponentsGroupBox.Controls.Add(this.NewModelTextBox);
             this.SystemComponentsGroupBox.Controls.Add(this.ModelLabel);
-            this.SystemComponentsGroupBox.Controls.Add(this.ManufacturerTextBox);
+            this.SystemComponentsGroupBox.Controls.Add(this.NewManufacturerTextBox);
             this.SystemComponentsGroupBox.Controls.Add(this.OSLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.WebCamLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.GPUTypeLabel);
@@ -156,7 +156,7 @@
             this.SystemComponentsGroupBox.Controls.Add(this.MemoryLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.LCDSizeLabel);
             this.SystemComponentsGroupBox.Controls.Add(this.ManufacturerLabel);
-            this.SystemComponentsGroupBox.Controls.Add(this.ConditionTextBox);
+            this.SystemComponentsGroupBox.Controls.Add(this.NewConditionTextBox);
             this.SystemComponentsGroupBox.Controls.Add(this.ConditionLabel);
             this.SystemComponentsGroupBox.Location = new System.Drawing.Point(12, 41);
             this.SystemComponentsGroupBox.Name = "SystemComponentsGroupBox";
@@ -173,12 +173,12 @@
             this.ComponentsTextBox.Size = new System.Drawing.Size(297, 328);
             this.ComponentsTextBox.TabIndex = 2;
             // 
-            // PlatformTextBox
+            // NewPlatformTextBox
             // 
-            this.PlatformTextBox.Location = new System.Drawing.Point(312, 29);
-            this.PlatformTextBox.Name = "PlatformTextBox";
-            this.PlatformTextBox.Size = new System.Drawing.Size(100, 26);
-            this.PlatformTextBox.TabIndex = 1;
+            this.NewPlatformTextBox.Location = new System.Drawing.Point(312, 29);
+            this.NewPlatformTextBox.Name = "NewPlatformTextBox";
+            this.NewPlatformTextBox.Size = new System.Drawing.Size(100, 26);
+            this.NewPlatformTextBox.TabIndex = 1;
             // 
             // PlatformLabel
             // 
@@ -189,12 +189,12 @@
             this.PlatformLabel.TabIndex = 0;
             this.PlatformLabel.Text = "Platform";
             // 
-            // ModelTextBox
+            // NewModelTextBox
             // 
-            this.ModelTextBox.Location = new System.Drawing.Point(312, 71);
-            this.ModelTextBox.Name = "ModelTextBox";
-            this.ModelTextBox.Size = new System.Drawing.Size(100, 26);
-            this.ModelTextBox.TabIndex = 1;
+            this.NewModelTextBox.Location = new System.Drawing.Point(312, 71);
+            this.NewModelTextBox.Name = "NewModelTextBox";
+            this.NewModelTextBox.Size = new System.Drawing.Size(100, 26);
+            this.NewModelTextBox.TabIndex = 1;
             // 
             // ModelLabel
             // 
@@ -205,12 +205,12 @@
             this.ModelLabel.TabIndex = 0;
             this.ModelLabel.Text = "Model";
             // 
-            // ManufacturerTextBox
+            // NewManufacturerTextBox
             // 
-            this.ManufacturerTextBox.Location = new System.Drawing.Point(115, 71);
-            this.ManufacturerTextBox.Name = "ManufacturerTextBox";
-            this.ManufacturerTextBox.Size = new System.Drawing.Size(100, 26);
-            this.ManufacturerTextBox.TabIndex = 1;
+            this.NewManufacturerTextBox.Location = new System.Drawing.Point(115, 71);
+            this.NewManufacturerTextBox.Name = "NewManufacturerTextBox";
+            this.NewManufacturerTextBox.Size = new System.Drawing.Size(100, 26);
+            this.NewManufacturerTextBox.TabIndex = 1;
             // 
             // OSLabel
             // 
@@ -311,12 +311,12 @@
             this.ManufacturerLabel.TabIndex = 0;
             this.ManufacturerLabel.Text = "Manufacturer";
             // 
-            // ConditionTextBox
+            // NewConditionTextBox
             // 
-            this.ConditionTextBox.Location = new System.Drawing.Point(115, 29);
-            this.ConditionTextBox.Name = "ConditionTextBox";
-            this.ConditionTextBox.Size = new System.Drawing.Size(100, 26);
-            this.ConditionTextBox.TabIndex = 1;
+            this.NewConditionTextBox.Location = new System.Drawing.Point(115, 29);
+            this.NewConditionTextBox.Name = "NewConditionTextBox";
+            this.NewConditionTextBox.Size = new System.Drawing.Size(100, 26);
+            this.NewConditionTextBox.TabIndex = 1;
             // 
             // ConditionLabel
             // 
@@ -408,6 +408,7 @@
             this.NewCancelButton.TabIndex = 5;
             this.NewCancelButton.Text = "Cancel";
             this.NewCancelButton.UseVisualStyleBackColor = true;
+            this.NewCancelButton.Click += new System.EventHandler(this.NewCancelButton_Click);
             // 
             // FinishButton
             // 
@@ -459,12 +460,8 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.GroupBox SystemComponentsGroupBox;
-        private System.Windows.Forms.TextBox ComponentsTextBox;
-        private System.Windows.Forms.TextBox PlatformTextBox;
         private System.Windows.Forms.Label PlatformLabel;
-        private System.Windows.Forms.TextBox ModelTextBox;
         private System.Windows.Forms.Label ModelLabel;
-        private System.Windows.Forms.TextBox ManufacturerTextBox;
         private System.Windows.Forms.Label OSLabel;
         private System.Windows.Forms.Label WebCamLabel;
         private System.Windows.Forms.Label GPUTypeLabel;
@@ -476,17 +473,21 @@
         private System.Windows.Forms.Label MemoryLabel;
         private System.Windows.Forms.Label LCDSizeLabel;
         private System.Windows.Forms.Label ManufacturerLabel;
-        private System.Windows.Forms.TextBox ConditionTextBox;
         private System.Windows.Forms.Label ConditionLabel;
         private System.Windows.Forms.GroupBox YourPriceTextBox;
-        private System.Windows.Forms.TextBox TotalTextBox;
-        private System.Windows.Forms.TextBox SalesTaxTextBox;
-        private System.Windows.Forms.TextBox PriceTextBox;
         private System.Windows.Forms.Label TotalLabel;
         private System.Windows.Forms.Label SalesTaxLabel;
         private System.Windows.Forms.Label PriceLabel;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button NewCancelButton;
         private System.Windows.Forms.Button FinishButton;
+        public System.Windows.Forms.TextBox ComponentsTextBox;
+        public System.Windows.Forms.TextBox NewPlatformTextBox;
+        public System.Windows.Forms.TextBox NewModelTextBox;
+        public System.Windows.Forms.TextBox NewManufacturerTextBox;
+        public System.Windows.Forms.TextBox NewConditionTextBox;
+        public System.Windows.Forms.TextBox TotalTextBox;
+        public System.Windows.Forms.TextBox SalesTaxTextBox;
+        public System.Windows.Forms.TextBox PriceTextBox;
     }
 }

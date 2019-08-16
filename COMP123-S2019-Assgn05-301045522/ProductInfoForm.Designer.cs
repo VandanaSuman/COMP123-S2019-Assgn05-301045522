@@ -110,8 +110,9 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
@@ -119,14 +120,16 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "&Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -139,8 +142,9 @@
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.backToolStripMenuItem.Text = "Back";
+            this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -159,6 +163,7 @@
             // 
             // ProductIDTextBox
             // 
+            this.ProductIDTextBox.AcceptsReturn = true;
             this.ProductIDTextBox.Location = new System.Drawing.Point(114, 35);
             this.ProductIDTextBox.Name = "ProductIDTextBox";
             this.ProductIDTextBox.Size = new System.Drawing.Size(100, 26);
@@ -474,6 +479,7 @@
             this.AnotherProductLabel.TabIndex = 12;
             this.AnotherProductLabel.Text = "Select Another Product";
             this.AnotherProductLabel.UseVisualStyleBackColor = true;
+            this.AnotherProductLabel.Click += new System.EventHandler(this.AnotherProductLabel_Click);
             // 
             // ProductInfoFormCancelLabel
             // 
@@ -520,6 +526,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
+            this.Load += new System.EventHandler(this.ProductInfoForm_Load);
             this.ProductInfoMenuStrip.ResumeLayout(false);
             this.ProductInfoMenuStrip.PerformLayout();
             this.ProductInfoGroupBox.ResumeLayout(false);
@@ -542,43 +549,43 @@
         private System.Windows.Forms.ToolStripMenuItem backToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.TextBox ProductIDTextBox;
         private System.Windows.Forms.Label ProductIDLabel;
-        private System.Windows.Forms.TextBox ConditionTextBox;
         private System.Windows.Forms.Label ConditionLabel;
-        private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.GroupBox ProductInfoGroupBox;
-        private System.Windows.Forms.TextBox ModelTextBox;
         private System.Windows.Forms.Label ModelLabel;
-        private System.Windows.Forms.TextBox OSTextBox;
         private System.Windows.Forms.Label OSLabel;
-        private System.Windows.Forms.TextBox ManufacturerTextBox;
         private System.Windows.Forms.Label ManufacturerLabel;
-        private System.Windows.Forms.TextBox PlatformTextBox;
         private System.Windows.Forms.Label PlatformLabel;
         private System.Windows.Forms.GroupBox TechSpecsGroupBox;
-        private System.Windows.Forms.TextBox TypeTextBox;
         private System.Windows.Forms.Label CPUTypeTextBox;
-        private System.Windows.Forms.TextBox CPUBrandTextBox;
         private System.Windows.Forms.Label CPUBrandLabel;
-        private System.Windows.Forms.TextBox SpeedTextBox;
         private System.Windows.Forms.Label CPUSpeedTextBox;
-        private System.Windows.Forms.TextBox CPUNumTextBox;
         private System.Windows.Forms.Label CPUNumberLabel;
-        private System.Windows.Forms.TextBox WebcamTextBox;
         private System.Windows.Forms.Label WebcamLabel;
-        private System.Windows.Forms.TextBox GPUTextBox;
         private System.Windows.Forms.Label GPUTypeTextBox;
-        private System.Windows.Forms.TextBox HDDTextBox;
         private System.Windows.Forms.Label HDDLabel;
-        private System.Windows.Forms.TextBox LCDTextBox;
         private System.Windows.Forms.Label LCDLabel;
-        private System.Windows.Forms.TextBox MemoryTextBox;
         private System.Windows.Forms.Label MemoryLabel;
         private System.Windows.Forms.Label ConfirmLabel;
         private System.Windows.Forms.Button AnotherProductLabel;
         private System.Windows.Forms.Button ProductInfoFormCancelLabel;
         private System.Windows.Forms.Button ProductInfoFormNextLabel;
+        public System.Windows.Forms.TextBox ProductIDTextBox;
+        public System.Windows.Forms.TextBox ConditionTextBox;
+        public System.Windows.Forms.TextBox CostTextBox;
+        public System.Windows.Forms.TextBox ModelTextBox;
+        public System.Windows.Forms.TextBox OSTextBox;
+        public System.Windows.Forms.TextBox ManufacturerTextBox;
+        public System.Windows.Forms.TextBox PlatformTextBox;
+        public System.Windows.Forms.TextBox TypeTextBox;
+        public System.Windows.Forms.TextBox CPUBrandTextBox;
+        public System.Windows.Forms.TextBox SpeedTextBox;
+        public System.Windows.Forms.TextBox CPUNumTextBox;
+        public System.Windows.Forms.TextBox WebcamTextBox;
+        public System.Windows.Forms.TextBox GPUTextBox;
+        public System.Windows.Forms.TextBox HDDTextBox;
+        public System.Windows.Forms.TextBox LCDTextBox;
+        public System.Windows.Forms.TextBox MemoryTextBox;
     }
 }

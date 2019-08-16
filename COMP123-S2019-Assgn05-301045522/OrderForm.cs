@@ -33,5 +33,11 @@ namespace COMP123_S2019_Assgn05_301045522
             Program.Forms[FormNames.ABOUT_FORM].Show();
             this.Hide();
         }
+      
+
+        private void NewCancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
